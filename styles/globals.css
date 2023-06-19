@@ -2,8 +2,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 400;
 }
 
 a {
@@ -13,4 +19,89 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+br+br {
+  display: none;
+}
+
+blockquote button {
+  font-size: 1.5em;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 10px;
+  margin: 3px 1px;
+  width: 40px;
+  height: 45px;
+  box-sizing: border-box;
+  transition: all 1s;
+}
+
+@media (min-width: 768px) {
+  blockquote button {
+    margin: 20px 1px;
+    font-size: 2.5em;
+    width: 50px;
+    height: 60px;
+  }
+}
+
+blockquote button.space {
+  width: 1.2em;
+  height: 0;
+}
+
+@media (min-width: 768px) {
+  blockquote button.space {
+    width: 0.9em;
+  }
+}
+
+blockquote button.punct {
+  border: 0;
+}
+
+blockquote button.active {
+  border-color: #666;
+  background-color: rgba(119, 193, 68, 0.3);
+}
+
+blockquote button.guessed {
+  border-color: #666;
+  /* background-color: rgba(68, 193, 191, 0.3); */
+}
+
+blockquote button.ended {
+  border: 0;
+  background-color: white;
+}
+
+blockquote {
+  width: 100%;
+}
+
+.hidden-input {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  z-index: -40000;
+  border: 0;
+  color: white;
+  outline: 0;
+}
+
+.tools {
+  text-align: right;
+  align-self: flex-end;
+  display: flex;
+}
+
+.tools button {
+  font-size: 1rem;
+  border: 1px solid #333;
+  background-color: rgba(153, 209, 255, 0.465);
+  padding: 0.5em 1em;
+  margin: 1em;
+  border-radius: 10px;
 }
