@@ -291,11 +291,19 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Cryptograma by Alicia Ramírez</title>
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>Cryptograma</h1>
+        <p>
+          To reveal the quote, click/tap on an emoji and enter a letter with
+          your keyboard. The same emoji represents the same letter. (
+          <a href="https://en.wikipedia.org/wiki/Cryptogram">
+            Lear more about Cryptograms
+          </a>
+          )
+        </p>
         <div className="tools">
           <button className="reset" type="button" onClick={resetPuzzle}>
             Reset puzzle
