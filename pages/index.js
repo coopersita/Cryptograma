@@ -264,6 +264,7 @@ export default function Home() {
       });
       setCrypto(cryptoArray);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quote]);
 
   // set/update the symbols when quote or selectedSymbols change
@@ -286,6 +287,7 @@ export default function Home() {
     });
     const tiles = breakIntoRows(phrase, tilesXRow);
     setCryptoPhrase(tiles);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [crypto, selectedSymbols]);
 
   return (
@@ -300,7 +302,7 @@ export default function Home() {
           To reveal the quote, click/tap on an emoji and enter a letter with
           your keyboard. The same emoji represents the same letter. (
           <a href="https://en.wikipedia.org/wiki/Cryptogram">
-            Lear more about Cryptograms
+            Learn more about Cryptograms
           </a>
           )
         </p>
